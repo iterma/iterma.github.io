@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Dummy.exe" version="1.0.0.0" publicKeyToken="24b4d699ac8251e3" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Launcher" version="7.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Launcher.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Launcher.exe" size="17272">
+      <assemblyIdentity name="Launcher" version="7.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>DmdEDMfuFQynDnnVX5RQFDTqwXqNaoFdedWMRXf23QU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Dummy.deps.json" size="770">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>kUSl40IR92/z1Xz2TUhlNRmN4bBSujFobPi5XJrEp00=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Dummy.dll" size="14200">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>aaVc9ZgYF6IjlLAKEj1ud8ZmuVE3g/7h9j+TpluHR9k=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Dummy.exe" size="153464">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>EiGEOArtY9r9nHl2O6uNrU5OuKHN84PIjCATGK/ZdjQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Dummy.runtimeconfig.json" size="267">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>aIL0ZGiv5NtpJoThfPtsYcVSdOsj/+4Pb+v0nAldS4k=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Zyxlib.Extensions.dll" size="9216">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>aq5hkeOoWD+MWNfCo3BHnB2wK4DjSvzfRkk9oENgn2Y=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=iViatzon IT" issuerKeyHash="cf42fad48727602105d6f0febcf0f061fc389cd9" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>iNUpsCNKa25SmLE1XuM8TejV9uE=</DigestValue></Reference></SignedInfo><SignatureValue>iqeKP81i6CraFD58NSrGd3iOhPYEhnRlCBGuhAnKbMYQvrpzNYUPD9hrdfDIslCTNp1tlcqkIsUiLQx44veXEqBn14+KcDUhA11pURcDv+EDVbmGGB8+mlCwV9OdfzlraRIWwEwsfa9wSd7pVpG1p7ABQLwDW30IV0TjOQ9g4ad7AN3x0nBdlRCtaCWEPlp63jj3zpViIWJjbffpEBvWc+GYju1C8QaS63pBHtl7rpVjHBaauEdgCSQymCoGqSzyvgAffT4/gkHoeT8OEKYlcdJ7GNQPmAzwCVaTdICJwu2OnZvs+zotUNcL+H9cl30bNtkdy8xRA9RDqslFnxWcmQ==</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>wp+ow3zgNGlOHNmyzUbXYauti+U4vbk1Y13+UvNDc5k7uBg12+UyXmQ/RSIDPxRnwxLOG1VuWJMBbhIttbb3xDpBvb+rB3oNTEUTU6PWx80Y18pA02+ZplTr74z4tiw+2WN2fyRezQW2r3OQ4scF+6UTaGV2VnadDSwpnWO9wBcBBvZhKa5Fu63X19tCoRX04lSeEeKvIIDjH1XPeTYRFdtKC69KV6KhRKoLGOMxIDfA+F0Bt4pkoqPaWFa5mmeXWv4nphs4uX1K0VkcA7/82ZyAzvVjVKhOdu8tVFsHxDvZOCISDzRiNPfTOSUTcixswQWnTWujWbbrLYWXpI3ZFQ==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="e1f6d5e84d3ce35e35b198526e6b4a23b029d588" Description="" Url=""><as:assemblyIdentity name="Dummy.exe" version="1.0.0.0" publicKeyToken="24b4d699ac8251e3" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=iViatzon IT</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>SbZ4PzjwdbMsbvtDz86lsswV7Ao=</DigestValue></Reference></SignedInfo><SignatureValue>NrXimDqYXwxUsry7sJWJL8e4Nszd2ZR5hSR9AAZmwwUO4tteH2YP7kFe75jus/8kH4jP+fXvyeFTo2UAql6KQ4iTb0cwXxA7qrscWlHGNY7Wrjy/NFPQ2GpMMPoBdtTS5gFFakkQENDyLENs7ww8mKbLSMGA7//U1T3NA5SmNZsrxjVUYj9zAGCiBEL3FbKTQs0zk1e/7SzRwodGIaBAt31hCZpIFLLp0jJiPjlKlT6/uCWTT9ssuRI5SIToMDRASL7s1Ma7/vapbDlftoKBqQ6X+UEkbPrroGEXc1dG9YkZnZfs76prp7+n2xuL4X7uXtCxjYVbu1bvbZgG2S6ltw==</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>wp+ow3zgNGlOHNmyzUbXYauti+U4vbk1Y13+UvNDc5k7uBg12+UyXmQ/RSIDPxRnwxLOG1VuWJMBbhIttbb3xDpBvb+rB3oNTEUTU6PWx80Y18pA02+ZplTr74z4tiw+2WN2fyRezQW2r3OQ4scF+6UTaGV2VnadDSwpnWO9wBcBBvZhKa5Fu63X19tCoRX04lSeEeKvIIDjH1XPeTYRFdtKC69KV6KhRKoLGOMxIDfA+F0Bt4pkoqPaWFa5mmeXWv4nphs4uX1K0VkcA7/82ZyAzvVjVKhOdu8tVFsHxDvZOCISDzRiNPfTOSUTcixswQWnTWujWbbrLYWXpI3ZFQ==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIDKzCCAhegAwIBAgIQ4c+mjtX3J4pACCgtAohLuzAJBgUrDgMCHQUAMBYxFDASBgNVBAMTC2lWaWF0em9uIElUMB4XDTE2MTIzMTIyMDAwMFoXDTIyMTIzMDIyMDAwMFowFjEUMBIGA1UEAxMLaVZpYXR6b24gSVQwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDCn6jDfOA0aU4c2bLNRtdhq62L5Ti9uTVjXf5S80NzmTu4GDXb5TJeZD9FIgM/FGfDEs4bVW5YkwFuEi21tvfEOkG9v6sHeg1MRRNTo9bHzRjXykDTb5mmVOvvjPi2LD7ZY3Z/JF7NBbavc5DixwX7pRNoZXZWdp0NLCmdY73AFwEG9mEprkW7rdfX20KhFfTiVJ4R4q8ggOMfVc95NhEV20oLr0pXoqFEqgsY4zEgN8D4XQG3imSio9pYVrmaZ5da/iemGzi5fUrRWRwDv/zZnIDO9WNUqE527y1UWwfEO9k4IhIPNGI099M5JRNyLGzBBadNa6NZtusthZekjdkVAgMBAAGjfTB7MA8GA1UdEwEB/wQFMAMCAQAwHwYDVR0lBBgwFgYIKwYBBQUHAwMGCisGAQQBgjcKAw0wRwYDVR0BBEAwPoAQSNHA0wL0zqYOqbcqtZhe1aEYMBYxFDASBgNVBAMTC2lWaWF0em9uIElUghDhz6aO1fcnikAIKC0CiEu7MAkGBSsOAwIdBQADggEBALEvKj3s5RA4tBqjfZP6ey8qftEeBtfBQr+LfhC1WdD6fgVlV8/dgswSyh+bih+glPwh8NSbgpcuPGm8lWoRsDzm2L5+EjdsR3ig0GaAyyssDAvwMXbnNDTurDix4rd6zGVgFfh4MvUnyy5gF8AKkmfrIFK0qq04m2P19ar6zFAj4oaDle4cfZep8KWSmhasfKcIg7NzuU3o+SkGZ1VJKaX+ePQPYAB9qiORGUKDghS8YMaTlcuZdnsRtGfxzXzeDmWPwj8Di6nrSHhA/w7MXdY29kHHZFOU5jY3Yg5x8M7CovSup1whsMowePuvcC6c7pXLPiSIpmbzybTJYnfNifI=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
